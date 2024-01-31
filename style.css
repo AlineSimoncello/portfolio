@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px; 
+}
+
+body {
+  background-color: #4e4d4d;
+  font-family: Helvetica;
+  margin: 2.5rem 5vw 0 5vw;
+  color: #fcf0f7;
+}
+
+.nav {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+}
+
+.nome,
+.sobrenome {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.nome {
+  margin-right: 0.5rem;
+}
+
+.sobrenome {
+  color: #ee0786;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  margin-top: 40px;
+}
+
+.nav li {
+  margin-right: 40px;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #fcf0f7;
+  transition: 0.5s;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: #ee0786;
+  text-decoration-thickness: 5px;
+}
+
+.line {
+  border-bottom: 1px solid #fcf0f7;
+  margin-top: 12px;
+} 
+
+.sobre {
+  margin: 5rem 2rem 2rem 0;
+  max-width: 450px;
+}
+
+.sobre h1 {
+  font-size: 36px;
+}
+
+.aline {
+  color: #ee0786;
+}
+
+.sobre p {
+ margin-top: 0.5rem;
+ font-size: 18px;
+}
+
+.tec-logo {
+  width: 80px;
+  padding-left: 10px;
+}
+
+.projetos {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  color: #ee0786;
+  font-size: 28px;
+}
+
+@media (max-width: 750px) {
+  body {
+    margin: 2rem 5vw 0 5vw;
+  }
+
+  .nav {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .list {
+    margin-top: 10px;
+  }
+
+  .nav li {
+    margin-right: 20px;
+  }
+
+}
