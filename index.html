@@ -6,8 +6,8 @@
     <title>Aline Simoncello - Portfólio</title>
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
     <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
@@ -22,9 +22,9 @@
   </head>
   <body>
     <!-- Cabeçalho -->
-    <header class="header" id="header">
-      <nav class="navbar">
-        <div class="nav__logo">
+    <header id="header">
+      <nav id="navbar">
+        <div id="logo">
           <a
             href="https://www.linkedin.com/in/aline-simoncello-perella-7ab43364/"
             ><i class="ri-linkedin-fill"></i
@@ -37,132 +37,128 @@
             ><i class="ri-github-fill"></i
           ></a>
         </div>
-        <ul class="navbar__links">
-          <li><a href="https://wa.me/+5511945870272/? text=Olá! Gostaria de marcar uma entrevista?" target="_blank">Contato</a></li>
-          <li><a href="assets/cv.pdf" target="_blank">Curriculo</a></li>
-        </ul>
+        <div id="menu">
+          <ul id="navbar__links">
+            <li>
+              <a
+                href="https://wa.me/+5511945870272/? text=Olá! Gostamos de seu portfólio."
+                target="_blank"
+                >Contato</a
+              >
+            </li>
+            <li><a href="assets/cv.pdf" target="_blank">Currículo</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <!-- sobre -->
-    <div class="container-sobre">
-      <div class="sobre" id="sobre">
-        <div class="about-me-text">
-          <h1 class="name">Aline Simoncello</h1>
-          <p class="proft">desenvolvedora front-end.</p>
-        </div>
-        <div class="about-me-text">
-          <h3 class="title-about-me">Quem sou eu?</h3>
-          <p class="about-me">
-            Focada em traduzir conceitos criativos em experiências web
-            envolventes e aplicativos funcionais. Combinando minha criatividade
-            com habilidades técnicas, busco constantemente superar expectativas
-            e entregar soluções únicas que cativam os usuários.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--fim sobre-->
-    <div class="responsivo">
-      <h2 class="sub-tecno">Tecnologias</h2>
-      <div class="tecno">
-        <div class="container-tecno">
-          <span class="about-tecno">HTML</span>
-          <div class="bg-tecno">
-            <img src="img/html5-line.png" class="tec-logo" alt="Logo do HTML" />
-          </div>
-        </div>
-        <div class="container-tecno">
-          <span class="about-tecno">CSS</span>
-          <div class="bg-tecno">
-            <img src="img/css3-line.png" class="tec-logo" alt="Logo do CSS" />
-          </div>
-        </div>
-        <div class="container-tecno">
-          <span class="about-tecno">JavaScript</span>
-          <div class="bg-tecno">
-            <img
-              src="img/javascript-line.png"
-              class="tec-logo"
-              alt="Logo do JavaScript"
-            />
-          </div>
-        </div>
-        <div class="container-tecno">
-          <span class="about-tecno">Git</span>
-          <div class="bg-tecno">
-            <img
-              src="img/git-branch-fill.png"
-              class="tec-logo"
-              alt="Logo do Git"
-            />
-          </div>
-        </div>
-        <div class="container-tecno">
-          <span class="about-tecno">GitHub</span>
-          <div class="bg-tecno">
-            <img
-              src="img/github-fill.png"
-              class="tec-logo"
-              alt="Logo do GitHub"
-            />
-          </div>
-        </div>
-      </div>
 
-      <h2 class="sub-project">Projetos</h2>
-      <div class="container-projects" id="projects">
-        <div class="for-title">
-          <h3 class="project-title">LineHost</h3>
-          <div class="project">
-            <div class="project-01"></div>
-            <p class="about-project">
-              Site de hospedagem. Dentre as funcionalidades está a possibilidade
-              de verificar a disponibilidade de um domínio.
-            </p>
-            <div class="container-btn">
-              <a href="https://alinesimoncello.github.io/LineHost/"
-                ><button class="project-btn">Link do projeto</button></a
-              >
-              <a href="https://github.com/AlineSimoncello/LineHost"
-                ><button class="project-btn">Código no GitHub</button></a
-              >
-            </div>
-          </div>   <!--fim primeiro projeto-->
-        </div>
-        <div class="for-title">
-          <h3 class="project-title">Página de cadastro</h3>
-          <div class="project">
-            <div class="project-02"></div>
-            <img src="" alt="" />
-            <p class="about-project">
-              Formulário com algumas validações feitas em JavaScript para auxiliar o usuário no preenchimento.
-            </p>
-            <div class="container-btn">
-              <a href="https://alinesimoncello.github.io/cadastro/"><button class="project-btn">Link do projeto</button></a>
-              <a href="https://github.com/AlineSimoncello/cadastro"><button class="project-btn">Código no GitHub</button></a>
-            </div>
+    <div id="about">
+      <div class="about-me-text">
+        <h1 class="name"><span>A</span>line <span>S</span>imoncello</h1>
+        <p class="proft">Desenvolvedora front-end.</p>
+      </div>
+      <div class="about-me-text">
+        <h3 class="title-about-me">Quem sou eu?</h3>
+        <p class="about-me">
+          Focada em traduzir conceitos criativos em experiências web envolventes
+          e aplicativos funcionais. Combinando minha criatividade com
+          habilidades técnicas, busco constantemente superar expectativas e
+          entregar soluções únicas que cativam os usuários.
+        </p>
+      </div>
+    </div>
+
+    <!--fim sobre-->
+
+    <section id="tec">
+      <h2>Tecnologias</h2>
+      <div id="all-tec">
+        <div class="container-tec">
+          <span>HTML</span>
+          <div class="tecno">
+            <img src="img/html5-line.png" alt="HTML" />
           </div>
         </div>
-        <div class="for-title">
-          <h3 class="project-title">A caminho</h3>
-          <div class="project">
-            <img src="" alt="" />
-            <p class="about-project">
-              ...
-            </p>
-            <div class="container-btn">
-              <button class="project-btn">Link do projeto</button>
-              <button class="project-btn">Código no GitHub</button>
-            </div>
+        <div class="container-tec">
+          <span>CSS</span>
+          <div class="tecno">
+            <img src="img/css3-line.png" alt="CSS" />
+          </div>
+        </div>
+        <div class="container-tec">
+          <span>JavaScript</span>
+          <div class="tecno">
+            <img src="img/javascript-line.png" alt="JavaScript" />
+          </div>
+        </div>
+        <div class="container-tec">
+          <span>React</span>
+          <div class="tecno">
+            <img src="img/reactjs-fill.png" alt="React" />
+          </div>
+        </div>
+        <div class="container-tec">
+          <span>GitHub</span>
+          <div class="tecno">
+            <img src="img/github-fill.png" alt="GitHub" />
+          </div>
+        </div>
+        <div class="container-tec">
+          <span>Git</span>
+          <div class="tecno">
+            <img src="img/git-branch-fill.png" alt="Git" />
           </div>
         </div>
       </div>
-      <div class="contact"></div>
-    </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="sub-project">Projetos</h2>
+      <div id="all-projects">
+        <div class="projects-info">
+          <h3>LineHost</h3>
+          <div class="img" id="project-01"></div>
+          <div class="des">
+            <p>
+              Site fictício de hospedagem. Dentre as funcionalidades está a
+              possibilidade de verificar a disponibilidade de um domínio.
+            </p>
+          </div>
+          <div class="btn">
+            <a href="https://alinesimoncello.github.io/Projeto-LineHost/"
+              ><button class="project-btn">Link do projeto</button></a
+            >
+            <a href="https://github.com/AlineSimoncello/Projeto-LineHost"
+              ><button class="project-btn">Código no GitHub</button></a
+            >
+          </div>
+        </div>
+        <div class="projects-info">
+          <h3>Página de cadastro</h3>
+          <div class="img" id="project-02"></div>
+          <div class="des">
+            <p>
+              Formulário com algumas validações feitas em JavaScript para
+              auxiliar o usuário no preenchimento.
+            </p>
+          </div>
+          <div class="btn">
+            <a href="https://alinesimoncello.github.io/cadastro/"
+              ><button class="project-btn">Link do projeto</button></a
+            >
+            <a href="https://github.com/AlineSimoncello/cadastro"
+              ><button class="project-btn">Código no GitHub</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="contact"></div>
+
     <footer>
-      <p>Aline Simoncello - Todos os direitos reservados</p>
+      <p>Aline Simoncello - 2024</p>
     </footer>
   </body>
 </html>
-
-
