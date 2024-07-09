@@ -185,10 +185,17 @@ body {
 }
 
 .projects-info .img {
-  width: 450px;
-  height: 340px;
+  width: 330px;
+  height: 280px;
   border-radius: 20px;
   margin-bottom: 1rem;
+}
+
+#project-03 {
+  background-image: url(img/project-03.png);
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
 }
 
 #project-01 {
